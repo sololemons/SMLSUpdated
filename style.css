@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    scroll-margin-top: 10vh;
+}
+html{
+    background: url(../images/pm_1704150504187_cmp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /* scrollbar-width: 4px; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(189, 188, 188);
+    height: 10vh;
+    padding: 20px 10px 10px 10px;
+    font-size: 20px;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    margin-right: 20px;
+    width: 100px;
+    height: 20px;
+
+}
+ul li a{
+    color: rgba(252, 251, 251, 0.952);
+    text-decoration: none;
+   
+}
+ul li:hover a:not(.active){
+    color: black;
+    /* background-color: white; */
+     font-size: 22px;
+     -webkit-transition: all 300ms ease-in-out;
+     -moz-transition: all 300ms ease-in-out;
+     -ms-transition: all 300ms ease-in-out;
+     -o-transition: all 300ms ease-in-out;
+     transition: all 300ms ease-in-out;
+}
+.hero{
+    height: 100vh;
+    display: block;
+    background-color: transparent;
+}
+.welcome{
+    /* border: 2px solid rgb(48, 13, 247); */
+    width: 90%;
+    height: 20vh;
+    font-size: 50px;
+    color: rgba(252, 5, 5, 0.808);
+    text-align: center;
+    padding: 25px 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: bolder;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.welcome:hover{
+    border-color: white;
+    color:deeppink;
+}
+.spacer-vertical{
+    /* background-color:blue; */
+    height: 15vh;
+}
+.abt{
+    display: grid;
+    place-items: center;
+
+}
+button{
+    width: 200px;
+    height: 4em;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color:antiquewhite;
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.sub{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    mix-blend-mode: difference;
+}
+.About{
+    background: rgb(216, 214, 214);
+}
+.About .left h1{
+    text-align: center;
+    font-size: 50px;
+    color: purple;
+}
+.About .left{
+    font-size: 20px;
+    text-align: justify;
+}
+.right img{
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+.flex-align{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+.services{
+    background: #0818A8;
+}
+.services .title{
+    width: 500px;
+    font-size: 40px;
+    color: white;
+
+}
+.services .content{
+    width: 700px;
+    font-size: 20px;
+    color: white;
+}
+.smart{
+    background: #191970;
+}
+.smart img{
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+.smart h2,
+.profession h2{
+    color: purple;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.smart .content,
+.profession .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.smart .content p,
+.profession .content p{
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+.profession{
+    background: #000080;
+}
+.addition{
+    padding: 30px;
+    background: #E5E4E2;
+}
+.addition h1{
+    /* padding: 20px; */
+    text-align: center;
+    font-size: 50px;
+    color: purple;
+}
+.addition .content img{
+    width: 70px;
+    height: 70px;
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+    transform: translateX(30px);
+    margin-bottom: 5vh;
+}
+.addition .content{
+    text-align: center;
+}
+.addition .content h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:#800080;
+}
+.addition .content p{
+    font-size: 20px;
+    text-align: justify;
+}
+.faq{
+    padding: 30px;
+    background: #9F2B68;
+}
+.faq h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+.faq .content  .question{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.faq .content .answer{
+    font-size: 20px;
+    color: white;
+}
+.holder{
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px 5px white;
+    height: 20vh;
+    padding: 10px;
+}
+.contact{
+    background: #191970;
+    padding: 30px;
+}
+.contact h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+.contact p{
+    font-size: 20px;
+    color: white;
+}
+form{
+    background: #E5E4E2;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 7vh;
+    padding: 30px;
+    gap: 20px;
+}
+.inputs{
+    width: 47%;
+    height: 10vh;
+    outline: none;
+    border: none;
+    text-align: left;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding-left: 20px;
+    /* background: rgb(228, 225, 225); */
+    background: rgb(152, 148, 206);
+    color: black;
+}
+textarea{
+    width: 100%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: rgb(152, 148, 206);
+    color: black;
+}
+input placeholder{
+    color: black;
+}
+#navbar {
+    transition: box-shadow 0.3s;
+  }
+.scrolled {
+    box-shadow: 10px 10px  10px 15px crimson;
+}
+.active{
+    color:crimson;
+    font-size: 25px;
+}
+.btn-primary a{
+    text-decoration: none;
+    font-size: 20px;
+    /* margin: 20px; */
+}
+.contact .btn-primary{
+    text-align: center;
+    margin-top: 40px;
+    /* left: 200px; */
+}

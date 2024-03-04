@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+.btn-sucess{
+    background-color: green;
+    color: white;
+    border: none;
+}
+.btn-danger{
+    background-color: red;
+    color: white;
+    border: none;
+}
+.btn-primary{
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.btn-sucess:hover {
+    background-color: darkgreen;
+  }
+  
+  .btn-danger:hover {
+    background-color: darkred;
+  }
+  
+  .btn-primary:hover {
+    background-color: darkblue;
+  }

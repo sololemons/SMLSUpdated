@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.right{
+    width: 45vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.right img{
+    width: inherit;
+    height: inherit;
+}
+.left h1{
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 10px;
+    /* margin: 20px 0px; */
+}
+.left h2{
+    font-size: 30px;
+    /* margin: 10px 0px; */
+    margin-bottom: 10px;
+}
+.left p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 90%;
+    height: 40px;
+    margin: 7px;
+    border: none;
+}
+.blue{
+    background-color: blue;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+.blue a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.blue:hover{
+    background-color: rgb(3, 3, 180);
+    box-shadow: 3px 3px 5px 0px grey;
+}
+.green{
+    background-color: rgb(5, 202, 5);
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+form{
+    width: 100%;
+    /* border: 2px solid crimson; */
+    outline: none;
+    /* padding: 10px; */
+    /* padding-top: 20px; */
+}
+.inputs{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 5px 0px grey;
+    border: none;
+    outline: none;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+}
+legend{
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* display: none; */
+}
+fieldset{
+    border: none;
+    border-top: 2px solid black;
+}
+p a{
+    text-decoration: none;
+    color: blue;
+}
+.green:hover{
+    background-color: rgb(9, 255, 9);
+    box-shadow: 3px 3px 5px 0px grey;
+}
+.inputs:hover, .inputs:focus-within{
+    box-shadow: 5px 5px 5px 5px grey;
+}
+p a:hover{
+    color: crimson;
+}

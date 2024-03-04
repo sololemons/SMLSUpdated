@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .order-details {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        .alert {
+            padding: 15px;
+            background-color: #f44336;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display: none; /* Hide alert by default */
+        }
+        .error-message {
+    color: red;
+    margin-bottom: 10px; 
+}
+
+    </style>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div class="order-details">
+        <h2>Order Details</h2>
+        <form action="process_order.php" method="POST" id="order-form">
+            <label for="service_provider">Service Provider:</label>
+            <select name="service_provider" id="service_provider">
+                <option value="Galaxy Cleaners">Galaxy Cleaners</option>
+                <option value="Ruxembourg Digital Cleaners">Ruxembourg Digital Cleaners</option>
+                <option value="Chuknx Digital Cleaners">Chuknx Digital Cleaners</option>
+                <option value="MuoshoMMoja Digital Cleaners">MuoshoMMoja Digital Cleaners</option>
+                <option value="Boyz 2 Men Laundry TM">Boyz 2 Men Laundry TM</option>
+            </select>
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" name="phone_number" id="phone_number" required>
+            <label for="pick_up_date">Pickup Date:</label>
+            <input type="date" name="pick_up_date" id="pick_up_date"  required>
+            <label for="pickup_location">Pickup Location:</label>
+            <input type="text" name="pickup_location" id="pickup_location" required>
+            <label for="dropoff_location">Drop Off Location:</label>
+            <input type="text" name="dropoff_location" id="dropoff_location" required>
+            <button type="submit" id="confirm-order">Confirm Order</button>
+        </form>
+    </div>
+    <script> 
+        window.onload = function() {
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementById("pick_up_date").setAttribute('min', today);
+        }
+</script>
+    
+</body>
+</html>
